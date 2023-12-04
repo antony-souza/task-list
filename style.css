@@ -99,15 +99,16 @@ main li {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 12px;
+    padding: 15px;
     position: relative;
     align-items: center;
     background-color: rgb(175, 164, 115);
     width: 450px;
-    height: 120px;
+    height: auto;
     border-radius: 12px;
     margin-right: 20px;
     list-style-type: none;
+    gap: 12px;
 }
 
 main li:hover{

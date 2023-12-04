@@ -9,8 +9,11 @@ btn.addEventListener('click', function (e) {
     const newTitle = boxTitle.value;
     const newText = boxText.value;
 
+    if (newTitle == '') {
+        return alert('Título em branco');
+    }
     if (newText == '') {
-        return alert('Campo em branco');
+        return alert('Tarefa em branco');
     }
 
     const newElement = createTaskElement(newTitle, newText);
@@ -30,6 +33,7 @@ btn.addEventListener('click', function (e) {
     saveTasksToLocalStorage();
 
     boxText.value = '';
+    boxTitle.value = '';
 });
 
 function createTaskElement(title, text) {
