@@ -109,6 +109,7 @@ main li {
     margin-right: 20px;
     list-style-type: none;
     gap: 12px;
+    transition: 1s;
 }
 
 main li:hover{
